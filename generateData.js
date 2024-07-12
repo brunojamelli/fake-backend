@@ -1,3 +1,5 @@
+// const faker = require('faker/locale/pt_BR');
+
 const faker = require('faker');
 const totalRecords = 20;
 
@@ -7,7 +9,8 @@ const generateProducts = (num = totalRecords) => {
     products.push({
       id: i + 1,
       nome: faker.commerce.productName(),
-      descricao: faker.commerce.productDescription()
+      descricao: faker.commerce.productDescription(),
+      preco: faker.commerce.price(5,2000)
     });
   }
   return products;
