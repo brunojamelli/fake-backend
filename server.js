@@ -1,27 +1,12 @@
-const express = require('express');
 const jsonServer = require('json-server');
-
-// const swaggerUi = require('swagger-ui-express');
-// const oas = require('express-oas-generator');
-
-const app = express();
-oas.init(app, {});  // Inicializa o express-oas-generator
-
+const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-app.use(middlewares);
+server.use(middlewares);
+server.use(router);
 
-app.use('/api', router);
-
-// configuração swagger
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(null, {
-//   swaggerOptions: {
-//     url: '/home/brunojamelli/Projects/fake-backend/openapi.json' // caminho para o arquivo swagger gerado
-//   }
-// }));
-
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
   console.log(`JSON Server is running on port ${PORT}`);
 });

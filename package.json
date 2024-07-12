@@ -5,12 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "fakeapi": "json-server --watch db.json --port 3000"
+    "fakeapi": "json-server --watch db.json --port 3000",
+    "generate-data": "node generateData.js"
   },
   "dependencies": {
-    "express-oas-generator": "^1.0.46",
-    "json-server": "^1.0.0-beta.1",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1"
+    "faker": "^5.5.3",
+    "json-server": "^1.0.0-beta.1"
   }
 }
