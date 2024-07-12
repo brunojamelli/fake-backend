@@ -1,0 +1,42 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Produto 1",
+      "descricao": "Descricao do Produto 1"
+    },
+    {
+      "id": "2",
+      "nome": "Produto 2",
+      "descricao": "Descricao do Produto 2"
+    },
+    {
+      "id": "4282"
+    },
+    {
+      "id": "0af6",
+      "nome": "Produto 3",
+      "descricao": "Descricao do Produto 3"
+    },
+    {
+      "id": "155f",
+      "nome": "Produto 3",
+      "descricao": "Descricao do Produto 3"
+    },
+    {
+      "id": "63cf",
+      "nome": "Produto 3",
+      "descricao": "Descricao do Produto 3"
+    },
+    {
+      "id": "9f92",
+      "nome": "Produto 3",
+      "descricao": "Descricao do Produto 3"
+    },
+    {
+      "id": "060e",
+      "nome": "Produto 3",
+      "descricao": "Descricao do Produto 3"
+    }
+  ]
+}
